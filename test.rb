@@ -8,9 +8,9 @@ spinal_warmup_series_with_meditation = [
   "switch directions: 1 minute",
   "hands on shoulders, inhale swing left, exhale swing right: 2 minutes",
   "hands on knees, upper back flexes: 2 minutes",
+  "shoulder shrugs: 2 minutes",
   "neck rotate right: 1 minute",
   "switch directions: 1 minute",
-  "shoulder shrugs: 2 minutes",
   "legs straight forward, stretch down on exhale: 2 minutes",
   "spread legs, stretch toward center: 2 minutes",
   "spread legs, stretch alternating left and right: 2 minutes",
@@ -31,7 +31,7 @@ def play(array)
     `say "#{command}"`
     sleep duration.to_i
     `say "stop"`
-    sleep 5
+    sleep 3
   end
   
 end
