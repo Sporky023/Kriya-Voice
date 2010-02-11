@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'activesupport'
 class KriyaTool
   
   SEQUENCES = {
@@ -20,10 +22,10 @@ class KriyaTool
       "get ready for meditation: 20 seconds",
       "starting eleven minute meditation timer now: 11 minutes",
       "you're done: 20 seconds",
-    ]
+    ],
     :some_sat_kriya => [
       "get ready: 10 seconds",
-      "sat kriya for four minutes: 4 minutes"
+      "sat kriya for four minutes: 5 minutes"
     ] 
   }
   
@@ -36,6 +38,15 @@ class KriyaTool
       sleep duration.to_i
       `say "stop"`
       sleep 3
+    end
+  end
+  
+  def self.play_twos
+    while true
+      `say "red"`
+      sleep 60
+      `say "blue"`
+      sleep 60
     end
   end
   
