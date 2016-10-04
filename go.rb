@@ -1,4 +1,4 @@
-require 'lib/kriya_tool'
+require_relative 'lib/kriya_tool'
 
 case ARGV[0]
 when nil

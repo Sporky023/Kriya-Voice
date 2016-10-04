@@ -1,5 +1,6 @@
-require 'rubygems'
-require 'activesupport'
+require 'active_support'
+require 'active_support/core_ext'
+
 class KriyaTool
   
   SEQUENCES = {
