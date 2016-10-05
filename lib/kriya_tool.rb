@@ -1,6 +1,8 @@
 require 'active_support'
 require 'active_support/core_ext'
 
+require_relative 'pronouncer'
+
 class KriyaTool
   
   SEQUENCES = {
@@ -35,7 +37,8 @@ class KriyaTool
     array.each do |x|
       command, timestring = x.split(': ')
       duration = timestring.split(' ')[0].to_i.send(timestring.split(' ')[1])
-      `say "#{command}"`
+      sayable = Pronouncer.phonetic(command)
+      `say "#{sayable}"`
       sleep duration.to_i
       `say "stop"`
       sleep 3
