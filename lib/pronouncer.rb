@@ -7,7 +7,7 @@ class Pronouncer
   def self.phonetic(command)
     words = command.split(' ')
 
-    words.map{ |word| pronunciation(word) }
+    words.map{ |word| pronunciation(word) }.join(' ')
   end
 
   private
